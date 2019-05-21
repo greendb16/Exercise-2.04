@@ -1,3 +1,4 @@
+package com.example.demo;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -5,7 +6,7 @@ import javax.validation.constraints.Size;
 
 public class Car {
     @NotNull
-    @Min(1)
+    @Size(min=1, max=15)
     private String name;
 
     @NotNull
